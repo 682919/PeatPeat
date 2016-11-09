@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="11" x="280" y="83">
+  <block type="movement_forward" id="11" x="309" y="91">
     <next>
       <block type="controls_repeat" id="40" inline="true">
         <value name="TIMES">
@@ -19,6 +19,11 @@
         <next>
           <block type="controls_whileUntil" id="115" inline="false">
             <field name="MODE">WHILE</field>
+            <value name="NUMBER">
+              <block type="math_number" id="181">
+                <field name="NUM">0</field>
+              </block>
+            </value>
             <statement name="DO">
               <block type="movement_right" id="83">
                 <next>
